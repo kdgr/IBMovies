@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <bool name="isTablet">false</bool>
+
+    <declare-styleable name="CustomUnitTextView">
+        <attr name="customUnit" format="string"/>
+        <attr name="customUnitType" format="enum">
+            <enum name="end" value="0" />
+            <enum name="start" value="1" />
+        </attr>
+        <attr name="customUnitFont" format="string"/>
+        <attr name="customTextFont" format="string"/>
+    </declare-styleable>
+
+    //shapeofview
+    <declare-styleable name="ShapeOfView">
+        <attr name="shape_clip_drawable" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="TriangleView">
+        <attr name="shape_triangle_percentLeft" format="float"/>
+        <attr name="shape_triangle_percentBottom" format="float"/>
+        <attr name="shape_triangle_percentRight" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="DiagonalView">
+        <attr name="shape_diagonal_angle" format="float"/>
+        <attr name="shape_diagonal_position" format="enum">
+            <enum name="bottom" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="4"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

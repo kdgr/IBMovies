@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mColorPalette"
+            type="Integer" />
+
+        <variable
+            name="movie"
+            type="com.kaandogruer.ibmovies.data.local.entity.Movie" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+
+        <com.kaandogruer.ibmovies.view.components.shapeofview.shapes.DiagonalView
+            android:id="@+id/dv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_weight="1"
+            app:shape_diagonal_angle="5"
+            app:shape_diagonal_position="top"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp">
+
+            <View
+                android:id="@+id/v_bg"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:background="#99999999"></View>
+
+        </com.kaandogruer.ibmovies.view.components.shapeofview.shapes.DiagonalView>
+
+        <com.kaandogruer.ibmovies.view.components.shapeofview.shapes.DiagonalView
+            android:id="@+id/dv_name"
+            android:layout_width="96dp"
+            android:layout_height="144dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_diagonal_angle="5"
+            app:shape_diagonal_position="top">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_movie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.kaandogruer.ibmovies.view.components.shapeofview.shapes.DiagonalView>
+
+        <com.kaandogruer.ibmovies.view.components.CustomUnitFontTextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:text="@{movie.title}"
+            app:customTextFont="fonts/montserrat_bold.ttf"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dv_name" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/dv_bg"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

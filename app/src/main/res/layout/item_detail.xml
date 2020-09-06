@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="movie"
+            type="com.kaandogruer.ibmovies.data.local.entity.Movie" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kaandogruer.ibmovies.view.components.CustomUnitFontTextView
+        android:id="@+id/item_score_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:textColor="#fff"
+        android:textIsSelectable="true"
+        android:textSize="12sp"
+        app:customUnitType="end"
+        app:customTextFont="fonts/montserrat_medium.ttf"
+        app:layout_constraintBottom_toTopOf="@+id/item_score"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="144dp"
+        tools:context=".view.detail.MovieDetailActivity"
+        android:text="Vote Average:" />
+
+    <com.kaandogruer.ibmovies.view.components.CustomUnitFontTextView
+        android:id="@+id/item_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3dp"
+        android:orientation="horizontal"
+        android:textColor="#fff"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        app:customUnitType="end"
+        app:customTextFont="fonts/oswald_bold.ttf"
+        app:layout_constraintBottom_toTopOf="@+id/item_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="144dp"
+        tools:context=".view.detail.MovieDetailActivity"
+        android:text="@{movie.voteAverage}"
+        tools:text="8.42" />
+    <com.kaandogruer.ibmovies.view.components.CustomUnitFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textIsSelectable="true"
+        tools:context=".view.detail.MovieDetailActivity"
+        android:orientation="horizontal"
+        android:id="@+id/item_detail"
+        android:text="@{movie.overview}"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:padding="8dp"
+        app:customTextFont="fonts/montserrat_medium.ttf"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginTop="96dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

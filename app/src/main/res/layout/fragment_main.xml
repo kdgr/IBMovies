@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="movie"
+            type="com.kaandogruer.ibmovies.data.local.entity.Movie"/>
+        <import type="com.kaandogruer.ibmovies.data.Resource"/>
+        <import type="com.kaandogruer.ibmovies.data.Status"/>
+        <variable
+            name="resource"
+            type="com.kaandogruer.ibmovies.data.Resource"/>
+        <variable
+            name="callback"
+            type="com.kaandogruer.ibmovies.view.list.LoadMoreCallback"/>
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.paulrybitskyi.persistentsearchview.PersistentSearchView
+            android:id="@+id/persistentSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="4dp"
+            android:paddingRight="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/buttonLoad"
+            app:layout_constraintTop_toBottomOf="@+id/persistentSearchView"
+            app:resource="@{resource}"
+            app:spanCount="2" />
+
+        <com.kaandogruer.ibmovies.view.components.CustomUnitFontButton
+            android:id="@+id/buttonLoad"
+            android:background="@drawable/button_bg"
+            android:padding="@dimen/activity_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Load More"
+            android:onClick="@{() -> callback.onLoadMore()}"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+</layout>

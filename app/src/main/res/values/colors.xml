@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CC000000</color>
+    <color name="colorPrimaryDark">#CC000000</color>
+    <color name="colorAccent">#CC000000</color>
+    <color name="colorbgGray">#e8eef0</color>
+    <color name="colorbgLightGray">#f2f4f5</color>
+
+    <color name="colorToolbarText">#FFFFFF</color>
+    <color name="colorToolbarTitleText">#FFFFFF</color>
+    <color name="colorToolbarBackground">#0081e7</color>
+    <color name ="colorButtonBlueBG">#0099ff</color>
+
+    <color name="colorTextHint">#CCCCCC</color>
+    <color name="colorVideoBG">#f5f7f8</color>
+    <color name="colorDarkRed">#ab0000</color>
+    <color name="colorRed">#ef6060</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="formBackground">#FFFFFF</color>
+    <color name="formTextColor">#5a5a5a</color>
+    <color name="alphaBlack">#aa000000</color>
+    <color name="formDivider">#dddddd</color>
+    <color name="formBottomBorder">#e0e0e0</color>
+    <color name="button_bg">#0099FF</color>
+    <color name="button_bg_passive">#cfcdd0</color>
+
+    <color name="colorGenaralBG">#f5f7f8</color>
+
+    <!-- slider -->
+    <color name="colorInactivePage">#000000</color>
+    <color name="colorActivePage">#ffffff</color>
+    <color name="colorSlider1BG">#6bb3c7</color>
+    <color name="colorSlider1BottomBG">#88c2d2</color>
+    <color name="colorSlider2BG">#bd5df0</color>
+    <color name="colorSlider2BottomBG">#ca7df3</color>
+    <color name="colorSlider3BG">#3f8ad8</color>
+    <color name="colorSlider3BottomBG">#65a1df</color>
+    <color name="colorSlider4BG">#f87058</color>
+    <color name="colorSlider4BottomBG">#f98c79</color>
+    <color name="colorSlider5BG">#f5c030</color>
+    <color name="colorSlider5BottomBG">#f7cc59</color>
+    <color name="colorSlider6BG">#55d786</color>
+    <color name="colorSlider6BottomBG">#77df9e</color>
+
+
+    <!-- workorder -->
+    <color name="list_workorders_divider">#f5f7f8</color>
+    <color name="list_workorders_background">#ffffff</color>
+    <color name="colorSearchTextActive">#0081e7</color>
+    <color name="colorSearchTextPassive">#9a9a9a</color>
+
+    <color name="colorGridHeader">#f2f4f5</color>
+
+    <color name="list_divider">#f5f7f8</color>
+    <color name="list_selector">#ADD8E6</color>
+
+    <color name="colorButtonBorderBlue">#0099ff</color>
+    <color name="colorButtonText">#0099ff</color>
+
+    <color name="colorFormStepBG">#f5f7f8</color>
+    <color name="colorLWBorder">#e7e7e7</color>
+    <color name="divider_view_bg">#dfe6e9</color>
+
+    <color name="stepper_text_completed">#4a90e2</color>
+    <color name="stepper_circle_completed">#4a90e2</color>
+    <color name="stepper_line_completed">#4a90e2</color>
+    <color name="stepper_line_incomplete">#d8d8d8</color>
+
+    <color name="preview_bottom_toolbar_bg">#CC000000</color>
+    <color name="preview_bottom_size">#61FFFFFF</color>
+
+    <color name="background">#FF323232</color>
+    <color name="color_red_id_error">#EF5362</color>
+    <color name="color_mid_header">#2A9DD5</color>
+    <color name="bannerbg">#99999999</color>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IBMovies</string>
+    <string name="title_item_detail">Item Detail</string>
+
+    <string name="msg_null_response">An error has occured.</string>
+
+    <!--drawer-->
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="homepage">Homepage</string>
+    <string name="next">Next</string>
+</resources>
